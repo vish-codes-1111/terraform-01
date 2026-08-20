@@ -47,7 +47,7 @@ resource "aws_instance" "my-ec2" {
 	for_each = tomap({
 		ec2_micro = "t2.micro"
 		ec2_medium = "t2.small"
-		ec2_medium = "t2.large"
+		ec2_large = "t2.large"
 	})
 	key_name = aws_key_pair.my_key.key_name
 	security_groups = [aws_security_group.the_security.name]
