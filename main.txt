@@ -1,0 +1,7 @@
+#first basic terraform script to automate the creation of a .txt file
+
+resource local_file my_file {
+	filename = "automate.txt"
+	content = "the first file content"
+}
+
